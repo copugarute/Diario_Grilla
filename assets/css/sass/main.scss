@@ -1,6 +1,6 @@
 //abstracts
 @import 'abstracts/variables';
-@import 'abstracts/mixin';
+@import 'abstracts/mixins';
 //vendors
 
 //base
@@ -9,10 +9,10 @@
 @import 'base/typography';
 
 //layouts
-@import 'layouts/container';
+@import 'layouts/container-grid';
 @import 'layouts/nav';
 @import 'layouts/contenido';
-@import 'layouts/aside';
+@import 'layouts/sidebar';
 @import 'layouts/newsletter';
 @import 'layouts/footer';
 

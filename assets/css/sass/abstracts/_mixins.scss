@@ -1,0 +1,17 @@
+@mixin vista-lg{
+    @media screen and (min-width: $lg){
+        @content;
+    }
+}
+
+@mixin vista-md{
+    @media screen and (min-width: $md){
+        @content;
+    }
+}
+@mixin vista-sm{
+    @media screen and (min-width: $sm){
+        @content;
+    }
+}
+

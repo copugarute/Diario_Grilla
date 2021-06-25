@@ -1,0 +1,206 @@
+body {
+  background-color: #fff;
+  color: #000;
+  margin: 1.6em auto;
+  font-family: "Roboto", sans-serif;
+  place-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-grid {
+  height: 100%;
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.container-grid .menu {
+  grid-column: span 5;
+}
+.container-grid .contenido {
+  grid-column: span 4;
+}
+.container-grid .sidebar {
+  grid-column: span 1;
+}
+.container-grid .newsletter {
+  grid-column: span 5;
+}
+.container-grid .footer {
+  grid-column: span 5;
+}
+
+@media screen and (min-width: 900px) {
+  .container-grid {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container-grid {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container-grid {
+    max-width: 500px;
+  }
+}
+
+.menu {
+  width: 100%;
+  height: 80px;
+  display: inline-flex;
+  padding-bottom: 20px;
+  border-bottom: solid 1px black;
+}
+.menu .menu__h1 {
+  font-size: 50px;
+  width: 50%;
+  padding-left: 20px;
+}
+.menu .menu-nav {
+  display: inline-block;
+  justify-content: end;
+  width: 50%;
+}
+.menu .menu-ul {
+  padding-top: 20px;
+  display: inline-flex;
+}
+.menu .menu__li {
+  padding-left: 20px;
+  font-size: 20px;
+  list-style: none;
+  text-transform: uppercase;
+}
+.menu .menu__li-input {
+  list-style: none;
+  padding-left: 30px;
+}
+.menu .menu__input {
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 20px;
+}
+.contenido .noticias {
+  grid-column: span 1;
+}
+.contenido .noticias h2 {
+  font-size: 18px;
+}
+.contenido .noticias p {
+  font-size: 14px;
+}
+
+.sidebar {
+  padding-right: 20px;
+}
+.sidebar .sidebar__p {
+  font-size: 14px;
+  text-justify: left;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.sidebar .aside__lista {
+  display: inline-flex;
+  padding: 10px 0;
+}
+.sidebar .lista-li {
+  list-style: none;
+  background-color: #3293C8;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-left: 10px;
+  padding: 2px;
+}
+.sidebar .sidebar-noticias h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.sidebar .sidebar-noticias h4 {
+  padding-bottom: 10px;
+}
+.sidebar .sidebar-noticias img {
+  padding-bottom: 10px;
+}
+
+.newsletter {
+  height: 200px;
+  width: 100%;
+  background-color: #F6F4F2;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+}
+.newsletter-h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.newsletter-input {
+  padding-top: 20px;
+}
+.newsletter input {
+  height: 30px;
+  width: 200px;
+  border: none;
+}
+.newsletter button {
+  background-color: #EE8030;
+  color: #fff;
+  height: 30px;
+  width: 100px;
+  border: none;
+}
+
+.footer {
+  height: 50px;
+}
+.footer p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

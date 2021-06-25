@@ -1,0 +1,31 @@
+.newsletter{
+    height: 200px;
+    width: 100%;
+    background-color: $b-color2;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+
+    &-h2{
+        font-size: $x-large;
+        padding-bottom: 10px;
+    }
+    &-input{
+        padding-top: 20px;
+        
+    }
+    input{
+        height: 30px;
+        width: 200px;
+        border: none;
+    }
+    button{
+        background-color: $terciary-color;
+        color: #fff;
+        height: 30px;
+        width: 100px;
+        border: none;
+    }
+
+
+}
