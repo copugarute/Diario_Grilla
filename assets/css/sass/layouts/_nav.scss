@@ -13,9 +13,7 @@
     .menu-nav{
         display: inline-block;
         justify-content: end;
-        width: 50%;
-        
-        
+        width: 50%;  
     }
     .menu-ul{
         padding-top: 20px;
@@ -39,8 +37,35 @@
           
       }
       
+      @include vista-md{
+        .menu__li{
+           
+            font-size: $large;  
+        }
+      }
+      @include vista-sm{
+          width: 400px;
+        .menu-nav{
+            justify-content: end; 
+        }
+        .menu__li{
+    
+            font-size: $small; 
+             
+        }
+        .li2{
+            display: none;
+        }
+        .menu__h1{
+            font-size: $x-large;
+            padding-top: 20px;
+        }
+        
+    }
 
 }
-a{
-    text-decoration: none;  
-}
+    a{
+        text-decoration: none;  
+    }
+
+    

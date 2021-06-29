@@ -1,10 +1,12 @@
 .container-grid{
     height: 100%;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     display: grid;
     grid-gap: 1.6em;
     grid-template-columns: repeat(5, 1fr);
+    
+
 
     .menu{
         grid-column: span 5;
@@ -22,25 +24,18 @@
         grid-column: span 5;
     }
 
+    @include vista-lg{
+      .contenido {
+        grid-column: span 3 ;
+      } 
+      .sidebar{
+        grid-column: span 2;
+    }
+
+    }
+    
 }
   
-.container-grid{
-    @include vista-lg{
-        width: 900px;
-    
-    }
-}
-.container-grid{
-    @include vista-md{
-        max-width: 700px;
-    }
-}
-
-.container-grid{
-    @include vista-sm{
-        max-width: 500px;
-    }
-}
 
 
 

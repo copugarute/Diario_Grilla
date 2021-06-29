@@ -1,17 +1,19 @@
 @mixin vista-lg{
-    @media screen and (min-width: $lg){
+    @media screen and (max-width: $lg){
         @content;
     }
 }
 
 @mixin vista-md{
-    @media screen and (min-width: $md){
+    @media screen and (max-width: $md){
         @content;
     }
 }
+
 @mixin vista-sm{
-    @media screen and (min-width: $sm){
+    @media screen and (max-width: $sm){
         @content;
     }
 }
+
 

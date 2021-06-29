@@ -1,8 +1,9 @@
 .contenido{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 500px);
     gap: 20px;
-    padding-left: 20px;
+    padding-left: 40px;
     
 
     .noticias{
@@ -19,6 +20,59 @@
         }
 
     }
+
+    @include vista-lg{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(3, 400px);
+        gap: 20px;
+        padding-left: 50px;
+    }
+
+    @include vista-md{
+        display: grid;
+        grid-template-columns: 600px;
+        grid-template-rows: repeat(6, 1fr);
+        padding-left: 10px;
+        
+        .noticias {
+
+            img{
+                width: 600px;
+                height: 300px;
+            }
+
+            
+        }
+
+        @include vista-sm{
+            .noticias {
+                grid-template-columns: 500px;
+                grid-template-rows: repeat(6, 1fr);
+                padding-left: 10px;
+
+                img{
+                    width: 350px;
+                    height: 150px;
+                }
+
+                h2{
+                    font-size: $medium;
+                }
+
+                p{
+                    width: 300px;
+                    font-size: $x-small;
+                }
+    
+                
+            }
+        }
+         
+    }
+        
+
+
+    
 }
 
 

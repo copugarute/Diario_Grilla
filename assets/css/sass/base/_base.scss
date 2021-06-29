@@ -5,4 +5,9 @@ body{
     margin: 1.6em auto ;
     font-family: 'Roboto', sans-serif;
     place-content: center;
+
+    @include vista-sm{
+        width: 500px;
+    }
 }
+
